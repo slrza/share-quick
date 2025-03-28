@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+/* Force light mode */
+:root {
+  color-scheme: light;
+}
+
+/* Prevent dark mode styles */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+}
+
+/* Add additional global styles below */
